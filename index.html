@@ -1,12 +1,146 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Седона</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!-- 	HEADER 	-->
+		<header class="header_content">
+			<div class="container">
+				<nav class="main_navigation">
+					<ul>
+						<li><a href="#">ИНФОРМАЦИЯ</a></li>
+						<li><a href="#">ФОТО И ВИДЕО</a></li>
+						<li class="logo"><img class="logo" src="logo.jpg" width="" height="" alt=""></li>
+						<li><a href="#">КАРТА ШТАТА</a></li>
+						<li><a href="hotels">ГОСТИНИЦЫ</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!--   MAIN   -->
+		<main class="main_content">
+			
+			<div class="welcome_content">
+				<img class="welcome_img" src="welcome.jpg" width="" height="" alt="">
+				<p class="welcome">WELCOME</p>
+				<p class="gorgeous">to the gorgeous</p>
+				<p class="because">Because the Grand Canyon sucks"</p>
+				<img class="white_mask_img" src="mask.jpg" width="" height="" alt="">
+			</div>
+			
+			
+			<div class="sedona_info">
+				<h2>СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+				<p class="five_reasons">РАСМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД-КАНЬОН!</p>
+			</div>
+			
+			<div class="reason_one">
+				<div class="reason_one_text">
+					<h2 class="real_city">НАСТОЯЩИЙ<br>ГОРОДОК</h2>
+					<p class="number_1">№1</p>
+					<p class="no_attraction">СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br>ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+				</div>
+				<div class="city_capture">
+					<img class="city_img" src="city.jpg" width="" height="" alt="">
+				</div>
+			
+			<div class="features">
+				<div class="home">
+					<h2>ЖИЛЬЕ</h2>
+					<p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br>МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+				</div>
+				<div class="food">
+					<h2>ЕДА</h2>
+					<p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br>ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+				</div>
+				<div class="gifts">
+					<h2>СУВЕНИРЫ</h2>
+					<p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО<br>ПРОИЗВОДСТВА!</p>
+				</div>
+			</div>
+			
+			<div class="reason_two">
+				<div class="bridge_capture">
+					<img class="bridge_img" src="bridge.jpg" width="" height="" alt="">
+				</div>
+				<div class="reason_two_text">
+					<h2 class="bridge_diablo">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h2>
+					<p class="number_2">№2</p>
+					<p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО<br>ВЫ ОСМЕЛИТЕСЬ</p>
+				</div>
+			</div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+			<div class="reason_others">
+				<div class="reason_three_text">
+					<h2>НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h2>
+					<p class="number_3">№3</p>
+					<p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br>НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+				</div>
+				<div class="reason_four_text">
+					<h2>КРАСИВАЯ<br>ДОРОГА</h2>
+					<p class="number_4">№4</p>
+					<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br>НЕ СКУЧНО</p>
+				</div>
+				<div class="reason_five_text">
+					<h2>МАЛО ТУРИСТОВ</h2>
+					<p class="number_5">№5</p>
+					<p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И<br>ТОЛПИТСЯ ТАМ</p>
+				</div>
+			</div>
+			
+			<div class="interest">
+				<p class="interest_question">ЗАИНТЕРЕСОВАЛИСЬ?</p>
+				<p>УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+			</div>
 
-  </body>
-</html>
+			<div class="sedona_hotels">
+				<a class="search_hotels" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+			</div>
+
+			<div class="map_content">
+				<!--img или url-->
+			</div>
+
+			<div class="calendar_form">
+				<form action="#" method="post">
+					<p>
+						<label for="checkin">Дата заезда:</label>
+						<input type="date" id="checkin" name="checkin">
+					</p>
+					<p>
+						<label for="checkout">Дата выезда:</label>
+						<input type="date" id="checkout" name="checkout" >
+					</p>
+					<p>
+						<label for="adult">Взрослые:</label>
+						<input type="number" id="adult" name="adult" min="1" value="2">
+						<label for="children">Дети:</label>
+						<input type="number" id="children" name="children" value="0">
+					</p>
+					<div>
+						<button class="search_btn" type="submit">НАЙТИ</button>
+					</div>
+				</form>
+			</div>
+		
+		</main>
+
+		<footer class="footer_content">
+			<div>
+				<a class="visit_sedona" href="#">#VISITSEDONA</a>
+			</div>
+			<div class="icons">
+				<a class="icon_twitter" href="#"></a>
+				<a class="icon_facebook" href="#"></a>
+				<a class="icon_youtube" href="#"></a>
+			</div>
+			<div class="logo_by_htmlacademy">
+				<a class="logo_htmlacademy" href="#"></a>
+			</div>
+		</footer>
+
+	</body>
+</html>	

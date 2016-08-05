@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hotels</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header class="header_content">
+			<div class="container">
+				<nav class="main_navigation">
+					<ul>
+						<li><a href="#">ИНФОРМАЦИЯ</a></li>
+						<li><a href="#">ФОТО И ВИДЕО</a></li>
+						<li class="logo"><a href="index.html"><img class="logo_img" src="logo.jpg" width="" height="" alt=""></a></li>
+						<li><a href="#">КАРТА ШТАТА</a></li>
+						<li><a href="#">ГОСТИНИЦЫ</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main class="hotels_content">
+			<div class="filters">
+				<div class="infrastructure">
+					<form action="#" method="post" class="infrastructure_filter">
+						<p>Инфраструктура:</p>
+						<p>
+							<input type="checkbox" id="infrastructure_pool" name="pool" value="pool" checked>
+							<label for="infrastructure_pool">Бассейн</label>
+						</p>
+						<p>
+							<input type="checkbox" id="infrastructure_parking" name="parking" value="parking">
+							<label for="infrastructure_parking">Парковка</label>
+						</p>
+						<p>
+							<input type="checkbox" id="infrastructure_wifi" name="wifi" value="wifi">
+							<label for="infrastructure_wifi">Wi-fi</label>
+						</p>
+					</form>
+					
+					<form action="#" method="post" class="house_filter">
+						<p>Тип жилья:</p>
+						<p>
+							<input type="checkbox" id="house_hotel" name="hotel" value="hotel" checked>
+							<label for="house_hotel">Гостиница</label>
+						</p>
+						<p>
+							<input type="checkbox" id="house_motel" name="motel" value="motel" checked>
+							<label for="house_motel">Мотель</label>
+						</p>
+						<p>
+							<input type="checkbox" id="house_apartaments" name="apartments" value="apartments" checked>
+							<label for="house_apartaments">Апартаменты</label>
+						</p>
+					</form>
+				</div>
+				
+				<div class="price_filter">
+					<p class="price_day">Стоимость в сутки (р):</p>
+						<div class="price_from_to">
+							<p class="price_from_form">
+								<label for="price_from">от</label>
+								<input class="min_price" id="price_from" type="number" value="0">
+							</p>
+							<p class="price_to_form">
+								<label for="price_to">до</label>
+								<input class="max_price" id="price_to" type="number" value="3000">
+							</p>
+						</div>
+
+	<!-- 			тут должен быть слайдер бар, но его нет				-->
+
+						<div class="show_result">
+							<a href="#">Показать</a>
+						</div>
+				</div>    
+			
+			<div class="sorts"> 
+				<p>Найдено: 3</p>
+				<p>Сортировка:</p>
+				<a class="sort_price" href="#">По цене</a>
+				<a class="sort_type" href="#">По типу</a>
+				<a class="sort_rating" href="#">По рейтингу</a>
+				<a href="#" class="sort_ascend"></a>
+				<a href="#" class="sort_descend"></a>
+			</div>
+
+			<div class="amara">
+				<div class="amara_capture">
+					<img class="amara_img" src="amara.jpeg" width="" height="" alt="">
+				</div>
+				<div class="amara_order">
+					<a class="amara_url" href="#">AMARA RESORT & SPA</a>
+					<p class="hotel_text">ГОСТИНИЦА</p>
+					<p class="price_text">ОТ 3500 Р.</p>
+				</div>
+				<div class="details_reserves">
+					<a href="#">ПОДРОБНЕЕ</a>
+					<a href="#">ЗАБРОНИРОВАТЬ</a>
+				</div>
+				<div>
+					<!-- 			звездочки, но их нет =( 			-->
+
+
+					<div>
+						<p class="rating_amara">РЕЙТИНГ: 8,5</p>
+					</div>
+				</div>	
+				
+				
+			</div>
+
+		<footer class="footer_content">
+			<div>
+				<a class="visit_sedona" href="#">#VISITSEDONA</a>
+			</div>
+			<div class="icons">
+				<a class="icon_twitter" href="#"></a>
+				<a class="icon_facebook" href="#"></a>
+				<a class="icon_youtube" href="#"></a>
+			</div>
+			<div class="logo_by_htmlacademy">
+				<a class="logo_htmlacademy" href="#"></a>
+			</div>
+		</footer>
+
+		</main>
+
+	</body>
+</html>
