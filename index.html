@@ -10,13 +10,15 @@
 		<header class="header_content">
 			<div class="container">
 				<nav class="navigation">
-					<ul>
+					<ul class="nav_items">
 						<li class="nav_item1"><a href="#">ИНФОРМАЦИЯ</a></li>
 						<li class="nav_item2"><a href="#">ФОТО И ВИДЕО</a></li>
 						<li class="nav_item3"><a href="#">КАРТА ШТАТА</a></li>
 						<li class="nav_item4"><a href="hotels.html">ГОСТИНИЦЫ</a></li>
 					</ul>
-					<div class="nav_logo_sedona"><img class="logo_img" src="logo.jpg" width="" height="" alt=""></div>
+					<div class="nav_logo_sedona">
+						<img class="logo_img" src="logo.jpg" width="" height="" alt="">
+					</div>
 				</nav>
 			</div>
 		</header>
@@ -77,18 +79,18 @@
 				<div class="blocks2_content">
 					<div class="blocks2_item">
 						<p class="blocks2_title">НЕБОЛЬШАЯ ПЛОЩАДЬ</p>
-						<p class="blocks2_text">№3</p>
-						<p class="blocks2_text">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+						<p class="blocks2_text1">№3</p>
+						<p class="blocks2_text2">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
 					</div>
 					<div class="blocks2_item">
 						<p class="blocks2_title">КРАСИВАЯ ДОРОГА</p>
-						<p class="blocks2_text">№4</p>
-						<p class="blocks2_text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
+						<p class="blocks2_text1">№4</p>
+						<p class="blocks2_text2">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
 					</div>
 					<div class="blocks2_item">
 						<p class="blocks2_item_title">МАЛО ТУРИСТОВ</p>
-						<p class="blocks2_item_text">№5</p>
-						<p class="blocks2_item_text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+						<p class="blocks2_item_text1">№5</p>
+						<p class="blocks2_item_text2">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
 					</div>
 				</div>
 				
@@ -105,21 +107,21 @@
 
 				<div class="calendar_form">
 					<form action="#" method="post">
-						<div>
+						<div class="check_field">
 							<label for="checkin">ДАТА ЗАЕЗДА:</label>
 							<span class="date_field">
 								<input type="text" id="checkin" name="checkin" value="24 АПРЕЛЯ 2016">
-								<button class="date_btn" type="button"></button>
+								<button class="date_btn" type="button"></button><!-- кнопачка календаря-->
 							</span>
 						</div>
-						<div>
+						<div class="check_field">
 							<label for="checkout">ДАТА ВЫЕЗДА:</label>
 							<span class="date_field">
 								<input type="text" id="checkout" name="checkout" value="4 ИЮЛЯ 2016">
 								<button class="date_btn" type="button"></button>
 							</span>
 						</div>
-						<div>
+						<div class="amount_field">
 							<label for="adult">ВЗРОСЛЫЕ:</label>
 							<span class="plus_minus_btn">
 								<button class="minus_btn" type="button">-</button>
@@ -127,7 +129,7 @@
 								<button class="plus_btn" type="button">+</button>
 							</span>
 						</div>
-						<div>
+						<div class="amount_field">
 							<label for="children">ДЕТИ:</label>
 							<span class="plus_minus_btn">
 								<button class="minus_btn" type="button">-</button>
@@ -144,8 +146,8 @@
 		</main>
 
 		<footer class="footer_content">
-			<div class="footer">
-				<div>
+			<div class="container">
+				<div class="visit_sedona_link">
 					<a class="visit_sedona" href="#">#VISITSEDONA</a>
 				</div>
 				<div class="social_links">
@@ -158,6 +160,5 @@
 				</div>
 			</div>
 		</footer>
-
 	</body>
 </html>	
