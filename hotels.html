@@ -10,122 +10,208 @@
 			<div class="container">
 				<nav class="main_navigation">
 					<ul>
-						<li><a href="#">ИНФОРМАЦИЯ</a></li>
-						<li><a href="#">ФОТО И ВИДЕО</a></li>
-						<li class="logo"><a href="index.html"><img class="logo_img" src="logo.jpg" width="" height="" alt=""></a></li>
-						<li><a href="#">КАРТА ШТАТА</a></li>
-						<li><a href="#">ГОСТИНИЦЫ</a></li>
+						<li class="nav_item1"><a href="#">ИНФОРМАЦИЯ</a></li>
+						<li class="nav_item2"><a href="#">ФОТО И ВИДЕО</a></li>
+						<li class="nav_item3"><a href="#">КАРТА ШТАТА</a></li>
+						<li class="nav_item4"><a href="index.html">ГОСТИНИЦЫ</a></li>
 					</ul>
+					<div class="nav_logo_sedona">
+						<a class="logo_link" href="index.html">
+							<img class="logo_img" src="logo.jpg" width="" height="" alt=""></div>
+						</a>
+					</div>
 				</nav>
 			</div>
 		</header>
 
-		<main class="hotels_content">
+		<main class="filters_content">
 			<div class="filters">
-				<div class="infrastructure">
-					<form action="#" method="post" class="infrastructure_filter">
-						<p>Инфраструктура:</p>
-						<p>
-							<input type="checkbox" id="infrastructure_pool" name="pool" value="pool" checked>
-							<label for="infrastructure_pool">Бассейн</label>
-						</p>
-						<p>
-							<input type="checkbox" id="infrastructure_parking" name="parking" value="parking">
-							<label for="infrastructure_parking">Парковка</label>
-						</p>
-						<p>
-							<input type="checkbox" id="infrastructure_wifi" name="wifi" value="wifi">
-							<label for="infrastructure_wifi">Wi-fi</label>
-						</p>
-					</form>
-					
-					<form action="#" method="post" class="house_filter">
-						<p>Тип жилья:</p>
-						<p>
-							<input type="checkbox" id="house_hotel" name="hotel" value="hotel" checked>
-							<label for="house_hotel">Гостиница</label>
-						</p>
-						<p>
-							<input type="checkbox" id="house_motel" name="motel" value="motel" checked>
-							<label for="house_motel">Мотель</label>
-						</p>
-						<p>
-							<input type="checkbox" id="house_apartaments" name="apartments" value="apartments" checked>
-							<label for="house_apartaments">Апартаменты</label>
-						</p>
-					</form>
+				<!-- одна большая форма на все фильтра -->
+				<form action="#" method="post" class="filters_form">
+				<div class="filters1">
+					<p>ИНФРАСТРУКТУРА:</p>
+						<div class="filter">
+							<input type="checkbox" id="filter1_option1" name="pool" value="pool" checked>
+							<label for="filters1_option1">БАССЕЙН</label>
+						</div>
+						<div class="filter">
+							<input type="checkbox" id="filter1_option2" name="parking" value="parking">
+							<label for="filters1_option2">ПАРКОВКА</label>
+						</div>
+						<div class="filter">
+							<input type="checkbox" id="filter1_option3" name="wifi" value="wifi">
+							<label for="filters1_option3">WI-FI</label>
+						</div>
+				</div>
+				
+				<div class="filters2">
+					<p>Тип жилья:</p>
+						<div class="filter">
+							<input type="checkbox" id="filter2_option1" name="hotel" value="hotel" checked>
+							<label for="filters2_option1">Гостиница</label>
+						</div>
+						<div class="filter">
+							<input type="checkbox" id="filter2_option2" name="motel" value="motel" checked>
+							<label for="filters2_option2">Мотель</label>
+						</div>
+						<div class="filter">
+							<input type="checkbox" id="filter2_option3" name="apartments" value="apartments" checked>
+							<label for="filter2_option3">Апартаменты</label>
+						</div>
 				</div>
 				
 				<div class="price_filter">
-					<p class="price_day">Стоимость в сутки (р):</p>
+					<div class="price_day">СТОИМОСТЬ В СУТКИ (Р):</div>
 						<div class="price_from_to">
-							<p class="price_from_form">
-								<label for="price_from">от</label>
+							<div class="price_from_form">
+								<label for="price_from">ОТ</label>
 								<input class="min_price" id="price_from" type="number" value="0">
-							</p>
-							<p class="price_to_form">
-								<label for="price_to">до</label>
+							</div>
+							<div class="price_to_form">
+								<label for="price_to">ДО</label>
 								<input class="max_price" id="price_to" type="number" value="3000">
-							</p>
+							</div>
 						</div>
-
-	<!-- 			тут должен быть слайдер бар, но его нет				-->
-
-						<div class="show_result">
-							<a href="#">Показать</a>
-						</div>
-				</div>    
-			
-			<div class="sorts"> 
-				<p>Найдено: 3</p>
-				<p>Сортировка:</p>
-				<a class="sort_price" href="#">По цене</a>
-				<a class="sort_type" href="#">По типу</a>
-				<a class="sort_rating" href="#">По рейтингу</a>
-				<a href="#" class="sort_ascend"></a>
-				<a href="#" class="sort_descend"></a>
+					</div>
+					<div class="slider_price">
+						<!-- тут должен быть слайдер бар, но его нет, пока нет-->
+					</div>
+					<div class="show_result">
+						<button type="submit">Показать</button>
+					</div>
+				</div>
+				</form>
+			</div>
+				   
+			<!-- 	сортировка		-->
+			<div class="sort"> 
+				<p class="sort_text">Найдено: 3</p>
+				<p class="sort_title">Сортировка:</p>
+				<a class="sort_item1" href="#">По цене</a> <!--а может button? -->
+				<a class="sort_item2" href="#">По типу</a> <!--а может button? -->
+				<a class="sort_item3" href="#">По рейтингу</a> <!--а может button? -->
+				<div class="sort_ascend_descend">
+					<a href="#" class="sort_ascend">
+						<span class="icon_ascend"> <!-- а нужны ли тут span?-->
+						<!--тут будет стрелка вверх-->
+						<span> 
+					</a>
+					<a href="#" class="sort_descend">
+						<span class="icon_descend"> <!-- а нужны ли тут span?-->
+						<!--тут будет стрелка вниз-->
+						</span>
+					</a>
+				</div>
 			</div>
 
-			<div class="amara">
-				<div class="amara_capture">
-					<img class="amara_img" src="amara.jpeg" width="" height="" alt="">
+			<div class="results"> 
+				<div class="result1"> <!--некий образец для двух других блоков результата -->
+					<div class="result1_capture">
+						<img class="result1_img" src="amara.jpeg" width="" height="" alt="">
+					</div>
+					<div class="result1_title">
+						<a class="result1_url" href="#">AMARA RESORT & SPA</a>
+					</div>
+					<div class="result1_texts">
+						<p class="result1_text1">ГОСТИНИЦА</p>
+						<p class="result1_text2">ОТ 3500 Р.</p>
+					</div>
+					<div class="result1_options">
+						<a class="result1_option1" href="#">ПОДРОБНЕЕ</a>
+						<a class="result1_option2" href="#">ЗАБРОНИРОВАТЬ</a>
+					</div>
+					<div class="result1_rating_stars">
+						<span class="result1_stars"> <!-- тут у меня сомнения, незнаю почему, с этим span-->
+						<!--тут будут звездочки рейтинга, причем кол-во меняется в зависимости от результата-->
+						</span>
+					</div>
+					<div class="result1_rating">
+						<p class="result1_rate_text">РЕЙТИНГ: 
+						<span class="result1_rate_summ"> <!-- сомнения в span. Цифра по идее меняется от рез-та -->
+						8,5
+						</span> 
+						</p>
+					</div>
 				</div>
-				<div class="amara_order">
-					<a class="amara_url" href="#">AMARA RESORT & SPA</a>
-					<p class="hotel_text">ГОСТИНИЦА</p>
-					<p class="price_text">ОТ 3500 Р.</p>
-				</div>
-				<div class="details_reserves">
-					<a href="#">ПОДРОБНЕЕ</a>
-					<a href="#">ЗАБРОНИРОВАТЬ</a>
-				</div>
-				<div>
-					<!-- 			звездочки, но их нет =( 			-->
-
-
-					<div>
-						<p class="rating_amara">РЕЙТИНГ: 8,5</p>
+						
+ 
+				<div class="result2"> <!--копия разметки с 1го результата -->
+					<div class="result2_capture">
+						<img class="result2_img" src="amara.jpeg" width="" height="" alt="">
+					</div>
+					<div class="result2_title">
+						<a class="result2_url" href="#">AMARA RESORT & SPA</a>
+					</div>
+					<div class="result2_texts">
+						<p class="result2_text1">ГОСТИНИЦА</p>
+						<p class="result2_text2">ОТ 3500 Р.</p>
+					</div>
+					<div class="result2_options">
+						<a class="result2_option1" href="#">ПОДРОБНЕЕ</a>
+						<a class="result2_option2" href="#">ЗАБРОНИРОВАТЬ</a>
+					</div>
+					<div class="result2_rating_stars">
+						<span class="result2_stars"> 
+						</span>
+					</div>
+					<div class="result2_rating">
+						<p class="result2_rate_text">РЕЙТИНГ: 
+						<span class="result2_rate_summ"> 
+						8,5
+						</span> 
+						</p>
 					</div>
 				</div>	
-				
-				
-			</div>
 
-		<footer class="footer_content">
-			<div>
-				<a class="visit_sedona" href="#">#VISITSEDONA</a>
-			</div>
-			<div class="icons">
-				<a class="icon_twitter" href="#"></a>
-				<a class="icon_facebook" href="#"></a>
-				<a class="icon_youtube" href="#"></a>
-			</div>
-			<div class="logo_by_htmlacademy">
-				<a class="logo_htmlacademy" href="#"></a>
-			</div>
-		</footer>
-
+			
+				<div class="result3"> <!--копия разметки с 1го результата -->
+					<div class="result3_capture">
+						<img class="result3_img" src="amara.jpeg" width="" height="" alt="">
+					</div>
+					<div class="result3_title">
+						<a class="result3_url" href="#">AMARA RESORT & SPA</a>
+					</div>
+					<div class="result3_texts">
+						<p class="result3_text1">ГОСТИНИЦА</p>
+						<p class="result3_text2">ОТ 3500 Р.</p>
+					</div>
+					<div class="result3_options">
+						<a class="result3_option1" href="#">ПОДРОБНЕЕ</a>
+						<a class="result3_option2" href="#">ЗАБРОНИРОВАТЬ</a>
+					</div>
+					<div class="result3_rating_stars">
+						<span class="result3_stars"> 
+						</span>
+					</div>
+					<div class="result3_rating">
+						<p class="result3_rate_text">РЕЙТИНГ: 
+						<span class="result3_rate_summ"> 
+						8,5
+						</span> 
+						</p>
+					</div>
+				</div>
+			</div>	
 		</main>
 
+
+
+
+
+		<footer class="footer_content"> <!--Скопирована с index.html-->
+			<div class="footer">
+				<div>
+					<a class="visit_sedona" href="#">#VISITSEDONA</a>
+				</div>
+				<div class="social_links">
+					<a class="social_twitter" href="#"></a>
+					<a class="social_facebook" href="#"></a>
+					<a class="social_youtube" href="#"></a>
+				</div>
+				<div class="logo_by_htmlacademy">
+					<a class="logo_htmlacademy" href="#"></a>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
