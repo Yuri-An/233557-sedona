@@ -1,0 +1,19 @@
+
+
+/*текстовые стили*/
+body {
+	font-size: 14px;
+	line-height: 21px; /* междустрочный */
+	color: #333333; /* черный цвет шрифта */
+	font-weight: normal; /*!!! а стоит писать normal? * жирность шрифта */
+	font-family: "PT Sans", "Myriad Pro", sans-serif; /* гарнитура шрифта, название */
+}
+
+h2 {
+	font-size: 21px;
+	line-height: 26px;
+	/* у шрифта нет цвета... */
+	font-weight: bold;
+	font-family: "PT sans", "Myriad Pro", sans-serif;
+} 
+
