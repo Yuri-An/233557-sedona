@@ -1,5 +1,3 @@
-
-
 /*текстовые стили*/
 body {
 	font-size: 14px;
@@ -8,12 +6,160 @@ body {
 	font-weight: normal; /*!!! а стоит писать normal? * жирность шрифта */
 	font-family: "PT Sans", "Myriad Pro", sans-serif; /* гарнитура шрифта, название */
 }
-
 h2 {
 	font-size: 21px;
 	line-height: 26px;
-	/* у шрифта нет цвета... */
 	font-weight: bold;
 	font-family: "PT sans", "Myriad Pro", sans-serif;
 } 
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	outline: 2px dotted red;
+}
+.navigation {
+	height: 56px; 
+	outline: 2px solid green; 
+}
+.nav_item {
+	display: inline; /*элементы навигации в одной строке */
+}
+
+.welcome_content {
+	height: 508px;
+	background-image: url("../img/welcome.jpg"); 
+	background-size: 1200px 508px;
+	outline: 2px solid blue;
+}
+.promo_content {
+	height: 216px; /*всего 216*/
+	padding-top: 5px; /*иначе блок отталкивается из-за текста в теге <p> =( */
+	outline: 2px solid yellow;
+}
+.info_photo_content {
+	height: 256px;
+	outline: 2px solid blue;
+}
+
+.info_photo_text {
+	width: 400px;
+	height: 256px;
+}
+.text_left {
+	float: left;
+	background-color: grey;
+}
+.text_right {
+	float: right;
+}
+.info_photo_img {
+	width: 800px;
+	height: 256px;
+}
+.img_right {
+	float: right;
+}
+.img_left {
+	float: left;
+}
+
+.info_photo_content::after { /*распорка*/
+	content: "";
+	display: table;
+	clear: both;
+}
+.blocks1_content {
+	height: 326px; /*всего высота 331*/
+	padding-top: 5px; /*иначе блок отталкивается из-за текста в теге <p> =( */
+}
+
+.blocks2_content {
+	height: 251px; /*256*/
+	outline: 2px solid brown;
+	padding-top: 5px; /*иначе блок отталкивается из-за текста в теге <p> =( */
+}
+.offer_content {
+	height: 286px; /*291*/
+	padding-top: 5px; /*иначе блок отталкивается из-за текста в теге <p> =( */
+	outline: 2px solid pink;
+}
+.map {
+	height: 473px;
+}
+
+.footer_links {
+	height: 115px; /*120*/
+	padding-top: 5px; /*иначе блок отталкивается из-за текста в теге <p> =( */
+	outline: 2px solid green;
+} 
+.filters {
+	height: 217px;
+	background-image: url("../img/filter_background.jpg") ; /*фон*/
+	background-size: 1200px 217px;
+	outline: 2px solid blue;
+}
+.filters::after { /*распорка*/
+	content: "";
+	display: table;
+	clear: both;
+}
+.filters1 {
+	height: 212px; /*217*/
+	width: 241px;
+	padding-top: 5px; /* временно*/
+	outline: 2px solid pink;
+	float: left;
+}
+.filters2 {
+	height: 212px; /*217*/
+	width: 241px;
+	padding-top: 5px; /*ыременно*/
+	margin-left: 14px;
+	outline: 2px solid pink;
+	float: left;
+}
+.price_filter {
+	height: 212px; /*217*/
+	width: 400px;
+	padding-top: 5px; /*временно*/
+	outline: 2px solid pink;
+	float: right;
+}
+.sort {
+	height: 82px; /*87*/
+	background-color: gray;
+	padding-top: 5px; /*иначе блок отталкивается из-за текста в теге <p> =( */
+}
+.result {
+	height: 152px;
+	outline: 2px solid brown;
+}
+.result::after { /*распорка*/
+	content: "";
+	display: table;
+	clear: both;
+}
+.result_capture {
+	width: 135px;
+	height: 90px; /*152*/
+	padding-top: 31px;
+	padding-bottom: 31px;
+	float: left;
+}
+.result_info {
+	width: 258px;
+	height: 90px;
+	margin-left: 30px;
+	margin-top: 31px;
+	float: left;
+	outline: 2px solid green;
+
+}
+.result_rating_stars {
+	width: 111px;
+	height: 92px;
+	float: right;
+	margin-right: 73px;
+	margin-top: 30px;
+}
 
