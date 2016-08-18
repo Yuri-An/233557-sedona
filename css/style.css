@@ -12,6 +12,14 @@ h2 {
 	font-weight: bold;
 	font-family: "PT sans", "Myriad Pro", sans-serif;
 } 
+p,
+h1,
+h2,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
 .container {
 	width: 1200px;
 	margin: 0 auto;
@@ -22,8 +30,41 @@ h2 {
 	background-color: green; 
 }
 .nav_item {
-	display: inline; /*элементы навигации в одной строке */
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333; 
+	font-weight: bold;
+	font-family: "PT Sans", "Myriad Pro", sans-serif; 
+	width: 166px; /*239*/
+	min-height: 42px; /* 56*/
+	float: left; 
+	outline: 1px solid brown;
+	padding-top: 14px;
+	padding-left: 73px;
 }
+.nav_item:nth-child(3) {
+	float: right;
+	width: 151px; /*239*/
+	padding-left: 88px;
+}
+.nav_item:nth-child(4) {
+	float: right;
+	width: 161px; /*239*/
+	padding-left: 78px;
+}
+li {
+	list-style-type: none; /* Убираем маркеры */
+}
+a {
+	text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+.nav_items::after { 
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
 
 .welcome_content {
 	height: 508px;
@@ -31,32 +72,72 @@ h2 {
 	background-size: 1200px 508px;
 	outline: 1px solid blue;
 }
+
+
 .promo_content {
-	height: 211px; /*всего 216*/
-	padding-top: 5px; /*иначе блок отталкивается из-за текста в теге <p> =( */
+	min-height: 157px; /*всего 216*/
 	background-color: yellow;
+
+	padding-left: 355px;
+	padding-right: 355px;
+	padding-top: 59px;
+	text-align: center;
 }
-.info_photo_content {
-	height: 256px;
-	outline: 1px solid blue;
+.promo_text {
+	font-size: 14px;
+	line-height: 26px;
+	color: color: #333333;
+	font-family: "PT Sans", "Myriad Pro", sans-serif;
+	margin-top: 27px;
+	
+
 }
 
+
+
+.info_photo_content {
+	height: 256px; /* 256 */
+	outline: 1px solid blue;
+}
 .info_photo_text {
 	width: 400px;
-	height: 256px;
+	height: 203px; /*256*/
+	color: #ffffff;
+	font-weight: normal;
+	padding-top: 53px;
+	text-align: center;
+	background-color: #81b3d2;
 }
+.info_photo_title {
+	font-size: 21px;
+	color: #ffffff; 
+	font-weight: bold;
+	padding-left: 124px;
+	padding-right: 125px;
+}
+.info_photo_text1 {
+	padding-top: 24px;
+}
+.info_photo_text2 {
+	padding-top: 21px;
+	padding-left: 47px;
+	padding-right: 47px;
+}
+
 .info_photo_img {
 	width: 800px;
 	height: 256px;
+	display: block;
 }
 .text_left,
 .img_left {
 	float: left;
-	background-color: grey;
+	
 }
 .text_right,
 .img_right {
 	float: right;
+	
 }
 /*распорка*/
 .info_photo_content::after { 
@@ -64,54 +145,183 @@ h2 {
 	display: table;
 	clear: both;
 }
+
+
+
 .blocks1_content {
-	height: 326px; /*всего высота 331*/
-	padding-top: 5px; /*иначе блок отталкивается из-за текста в теге <p> =( */
+	min-height: 331px; /*всего высота 331*/
+	text-align: center;
+	background-color: yellow;
+}
+.blocks1_item {
+	width: 400px;
+	outline: 1px solid violet;
+	float: left;
+	
+}
+.blocks1_title {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	padding-top: 160px;
 }
 
+.blocks1_text {
+	padding-top: 24px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.blocks1_content::after { 
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+
+
 .blocks2_content {
-	height: 251px; /*256*/
-	outline: 2px solid brown;
-	padding-top: 5px; /*иначе блок отталкивается из-за текста в теге <p> =( */
+	min-height: 256px; /*256*/
+	text-align: center;
+	background-color: grey;
 }
+.blocks2_item {
+	width: 400px;
+	outline: 1px solid violet;
+	float: left;
+}
+.blocks2_title {
+	padding-top: 45px;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+.blocks2_text1 {
+	padding-top: 24px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.blocks2_text2 {
+	padding-top: 20px;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+.blocks2_content::after { 
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+
+
+
+
 .offer_content {
-	height: 286px; /*291*/
-	padding-top: 5px; /*иначе блок отталкивается из-за текста в теге <p> =( */
-	outline: 1px solid pink;
+	min-height: 290px; /*291*/
+	background-color: yellow;
+	text-align: center;
+	
 }
-.map {
-	height: 473px;
+.offer_title {
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bold;
+padding-top: 55px;
+
 }
+.offer_text {
+	font-size: 14px;
+	line-height: 24px;
+	padding-top: 30px;
+	padding-left: 380px;
+	padding-right: 380px;
+}
+
+
+.map_content {
+	height: 473px; /*473*/
+	outline: 1px solid blue;
+}
+
+
 .footer_links {
-	height: 115px; /*120*/
-	padding-top: 5px; /*иначе блок отталкивается из-за текста в теге <p> =( */
+	min-height: 120px; /*120*/
 	background-color: green;
-} 
+	
+}
+.visit_sedona_link,
+.social_links,
+.logo_by_htmlacademy {
+	width: 400px;
+	float: left;
+	outline: 1px solid black;
+	
+	
+
+}
+.footer_links::after { 
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.visit_sedona_link {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	padding-top: 45px;
+	text-align: center;
+}
+.logo_by_htmlacademy {
+	width:297px; /*400*/
+	padding-left: 103px;
+}
+.website_by,
+.logo_htmlacademy {
+	display: inline-block;
+	outline: 1px solid red;
+}
+.website_by {
+	padding-top: 46px;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+
 .filters {
-	height: 217px;
+	min-height: 217px;
 	background-image: url("../img/filter_background.jpg") ; /*фон*/
 	background-size: 1200px 217px;
+	color: white;
+}
+.filter_title {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	padding-top: 25px;
 }
 .filters1 {
-	height: 212px; /*217*/
+	min-height: 217px; /*217*/
 	width: 241px;
-	padding-top: 5px; /* временно*/
 	outline: 1px solid pink;
 	float: left;
 	margin-left: 73px;
 }
 .filters2 {
-	height: 212px; /*217*/
+	min-height: 217px; /*217*/
 	width: 274px;
-	padding-top: 5px; /*ыременно*/
 	outline: 1px solid pink;
 	float: left;
 	margin-left: 14px;
 }
 .price_filter {
-	height: 212px; /*217*/
+	min-height: 217px; /*217*/
 	width: 328px;
-	padding-top: 5px; /*временно*/
 	outline: 1px solid pink;
 	float: right;
 	margin-right: 73px;
@@ -121,42 +331,50 @@ h2 {
 	display: table;
 	clear: both;
 }
+
+
 .sort {
-	height: 82px; /*87*/
+	min-height: 87px; /*87*/
 	background-color: gray;
-	padding-top: 5px; /*иначе блок отталкивается из-за текста в теге <p> =( */
+	display: inline-block;
 }
+
+
 .result {
-	height: 151px;
+	min-height: 151px;
 	outline: 1px solid brown;
 }
 .result_capture {
 	width: 135px;
-	height: 90px; /*151*/
+	min-height: 90px; /*151*/
 	padding-top: 30px;
-	
 	float: left;
 	margin-left: 73px;
 }
 .result_info {
 	width: 258px;
-	height: 90px;
+	min-height: 95px;
 	margin-left: 30px;
-	margin-top: 30px;
+	margin-top: 25px;
 	float: left;
 	outline: 1px solid green;
 
 }
 .result_rating_stars {
-	width: 111px;
-	height: 90px;
+	width: 109px;
+	min-height: 25px;
 	float: right;
 	margin-right: 73px;
 	margin-top: 30px;
 	outline: 1px solid green;
+	text-align: center;
+	padding-top: 65px;
 }
 .result::after { /*распорка*/
 	content: "";
 	display: table;
 	clear: both;
 }
+
+
+
