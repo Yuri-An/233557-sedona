@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Седона</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 		<!--Header-->
@@ -16,28 +17,24 @@
 						<li class="nav_item"><a href="hotels.html">ГОСТИНИЦЫ</a></li>
 						<li class="nav_item"><a href="#">КАРТА ШТАТА</a></li>
 					</ul>
-					<!--<div class="nav_logo_sedona">
-						<img class="logo_img" src="img/sedona_little_logo.png" width="138" height="70" alt="Sedona">
-					</div>-->
+					<div class="nav_logo_sedona">
+						<a href="index.html"><img class="logo_img" src="img/sedona_little_logo.png" width="138" height="70" alt="Sedona"></a>
+					</div>
 				</nav>
 			</div>
 		</header>
-		<!--Content-->
 		<main class="main_content">
 			<div class="container">
 				<div class="welcome_content">
-					<!-- тут как бы фон подключенный через css-->
-					<!--<div class="welcome_img">-->
-						<img class="welcome_mask" src="img/white_mask_welcome.png" width="1200px" height="57px">
-					<!--</div>-->
+					<img class="welcome_mask" src="img/white_mask_welcome.png" height="57px">
 				</div>
 
 				<div class="promo_content">
-					<h2 class="promo_title">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+					<h2 class="promo_title">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
 					<p class="promo_text">РАСCМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД-КАНЬОН!</p>
 				</div>
 				
-				<div class="info_photo_content"> <!--небольшой образец для другого блока-->
+				<div class="info_photo_content"> 
 					<div class="info_photo_text text_left">
 						<p class="info_photo_title">НАСТОЯЩИЙ ГОРОДОК</p>
 						<p class="info_photo_text1">№1</p>
@@ -49,15 +46,15 @@
 				</div>
 			
 				<div class="blocks1_content">
-					<div class="blocks1_item">
+					<div class="blocks1_item large_icon icon_home">
 						<p class="blocks1_title">ЖИЛЬЕ</p>
 						<p class="blocks1_text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
 					</div>
-					<div class="blocks1_item">
+					<div class="blocks1_item large_icon icon_food">
 						<p class="blocks1_title">ЕДА</p>
 						<p class="blocks1_text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
 					</div>
-					<div class="blocks1_item">
+					<div class="blocks1_item large_icon icon_gift">
 						<p class="blocks1_title">СУВЕНИРЫ</p>
 						<p class="blocks1_text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
 					</div>
@@ -95,54 +92,53 @@
 				<div class="offer_content">
 					<p class="offer_title">ЗАИНТЕРЕСОВАЛИСЬ?</p>
 					<p class="offer_text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-				 	<!--<a class="search_hotels" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>-->
-				</div>
+					<form class="calendar_form" action="#" method="post">
+						<a href="#" class="search_title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+						<div class="field_index">
+							<div class="check_field">
+								<label for="id_checkin">ДАТА ЗАЕЗДА:</label>
+								<div class="date_field">
+									<input type="text" id="id_checkin" name="checkin" value="24 АПРЕЛЯ 2016">
+									<a class="date_btn" href="#"></a>
+								</div>
+							</div>
+							<div class="check_field">
+								<label for="id_checkout">ДАТА ВЫЕЗДА:</label>
+								<div class="date_field">
+									<input type="text" id="id_checkout" name="checkout" value="4 ИЮЛЯ 2016">
+									<a class="date_btn" href="#"></a>
+								</div>
+							</div>
 
-				<div class="map_content">
-					<!-- блок карты -->
-					<img class="map_img" src="img/map.jpg" width="1200px" height="473px" alt="Sedona Map">
-				</div>
+							<div class="amount_adult">
+								<label for="id_adult">ВЗРОСЛЫЕ:</label>
+								<div class="plus_minus_btn">
+									<a class="minus_btn" href="#"></a>
+									<input type="text" id="id_adult" name="adult" value="2">
+									<a class="plus_btn" href="#"></a>
+								</div>
+							</div>
 
-				<!--<div class="calendar_form">
-					<form action="#" method="post">
-						<div class="check_field">
-							<label for="checkin">ДАТА ЗАЕЗДА:</label>
-							<div class="date_field">
-								<input type="text" id="checkin" name="checkin" value="24 АПРЕЛЯ 2016">
-								<button class="date_btn" type="button"></button>
+							<div class="amount_children">
+								<label for="id_children">ДЕТИ:</label>
+								<div class="plus_minus_btn">
+									<a class="minus_btn" href="#"></a>
+									<input type="text" id="id_children" name="children" value="0">
+									<a class="plus_btn" href="#"></a>
+								</div>
 							</div>
-						</div>
-						<div class="check_field">
-							<label for="checkout">ДАТА ВЫЕЗДА:</label>
-							<div class="date_field">
-								<input type="text" id="checkout" name="checkout" value="4 ИЮЛЯ 2016">
-								<button class="date_btn" type="button"></button>
+							<div>
+								<button class="search_btn" type="submit">НАЙТИ</button>
 							</div>
-						</div>
-						<div class="amount_field">
-							<label for="adult">ВЗРОСЛЫЕ:</label>
-							<div class="plus_minus_btn">
-								<button class="minus_btn" type="button">-</button>
-									<input type="number" id="adult" name="adult" min="1" value="2">
-								<button class="plus_btn" type="button">+</button>
-							</div>
-						</div>
-						<div class="amount_field">
-							<label for="children">ДЕТИ:</label>
-							<div class="plus_minus_btn">
-								<button class="minus_btn" type="button">-</button>
-									<input type="number" id="children" name="children" value="0">
-								<button class="plus_btn" type="button">+</button>
-							</div>
-						</div>
-						<div>
-							<button class="search_btn" type="submit">НАЙТИ</button>
 						</div>
 					</form>
-				</div>-->
+				</div>
+				<div class="map_content">
+					<img class="map_img" src="img/map.jpg" width="1200px" height="593px" alt="Sedona Map">
+				</div>
 			</div>
 		</main>
-
+			
 		<footer class="footer_content">
 			<div class="container">
 				<div class="footer_links">
@@ -150,13 +146,15 @@
 						<a class="visit_sedona" href="#">#VISITSEDONA</a>
 					</div>
 					<div class="social_links">
-						<a class="social_twitter" href="#">tw</a>
-						<a class="social_facebook" href="#">fb</a>
-						<a class="social_youtube" href="#">yb</a>
+						<a class="social_icons social_twitter" href="#"></a>
+						<a class="social_icons social_facebook" href="#"></a>
+						<a class="social_icons social_youtube" href="#"></a>
 					</div>
 					<div class="logo_by_htmlacademy">
 						<p class="website_by">WEBSITE BY</p>
-						<!--<a class="logo_htmlacademy" href="#"><img class="htmlacademy_img" src="img/logo_htmlacademy.png" width="113px" height="39px" alt="HTML Academy"></a>-->
+						<a class="logo_htmlacademy" href="#">
+								<!--<img class="htmlacademy_img" src="img/logo_htmlacademy.png" width="113px" height="39px" alt="HTML Academy">-->
+						</a>
 					</div>
 				</div>
 			</div>

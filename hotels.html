@@ -15,100 +15,87 @@
 						<li class="nav_item"><a href="#">ГОСТИНИЦЫ</a></li>
 						<li class="nav_item"><a href="#">КАРТА ШТАТА</a></li>
 					</ul>
-					<!--<div class="nav_logo_sedona">
-						<a class="logo_link" href="index.html">
-							<img class="img/sedona_little_logo_img" src="img/sedona_little_logo.png" width="138px" height="70px" alt="Sedona">
-						</a>
-					</div>-->
+					<div class="nav_logo_sedona">
+						<a href="index.html"><img class="logo_img" src="img/sedona_little_logo.png" width="138" height="70" alt="Sedona"></a>
+					</div>
 				</nav>
 			</div>
 		</header>
-
 		<main class="filters_content">
 			<div class="container">
 				<div class="filters">
-					<!-- одна большая форма на все фильтра -->
-					<form action="#" method="post" class="filters_form">
-					<div class="filters1">
-						<p class="filter_title">ИНФРАСТРУКТУРА:</p>
-						<div class="filter">
-							<input type="checkbox" id="filter1_option1" name="pool" value="pool" checked>
-							<label for="filters1_option1">БАССЕЙН</label>
+					<div class="filter_index">
+						<form action="#" method="post" class="filters_form">
+						<div class="filters1">
+							<p class="filter_title">ИНФРАСТРУКТУРА:</p>
+							<div class="filter">
+								<input type="checkbox" id="fpool" value="pool" checked>
+								<label for="fpool">БАССЕЙН</label>
+								</div>
+							<div class="filter">
+								<input type="checkbox" id="fparking" value="parking">
+								<label for="fparking">ПАРКОВКА</label>
 							</div>
-						<div class="filter">
-							<input type="checkbox" id="filter1_option2" name="parking" value="parking">
-							<label for="filters1_option2">ПАРКОВКА</label>
-						</div>
-						<div class="filter">
-							<input type="checkbox" id="filter1_option3" name="wifi" value="wifi">
-							<label for="filters1_option3">WI-FI</label>
-						</div>
-					</div>
-					
-					<div class="filters2">
-						<p class="filter_title">ТИП ЖИЛЬЯ:</p>
-						<div class="filter">
-							<input type="checkbox" id="filter2_option1" name="hotel" value="hotel" checked>
-							<label for="filters2_option1">ГОСТИНИЦА</label>
-						</div>
-						<div class="filter">
-							<input type="checkbox" id="filter2_option2" name="motel" value="motel" checked>
-							<label for="filters2_option2">МОТЕЛЬ</label>
-						</div>
-						<div class="filter">
-							<input type="checkbox" id="filter2_option3" name="apartments" value="apartments" checked>
-							<label for="filter2_option3">АПАРТАМЕНТЫ</label>
-						</div>
-					</div>
-					
-					<div class="price_filter">
-						<div class="price_day">
-							<p class="filter_title">СТОИМОСТЬ В СУТКИ (Р):</p>
-						</div>
-						<div class="price_from_to">
-							<div class="price_from_form">
-								<label for="price_from">ОТ</label>
-								<input class="min_price" id="price_from" type="number" value="0">
-							</div>
-							<div class="price_to_form">
-								<label for="price_to">ДО</label>
-								<input class="max_price" id="price_to" type="number" value="3000">
+							<div class="filter">
+								<input type="checkbox" id="fwifi" value="wifi">
+								<label for="fwifi">WI-FI</label>
 							</div>
 						</div>
-						
-						<div class="slider_price">
-							<!-- тут должен быть слайдер бар, но его нет, пока нет-->
+						<div class="filters2">
+							<p class="filter_title">ТИП ЖИЛЬЯ:</p>
+							<div class="filter">
+								<input type="checkbox" id="fhotel" value="hotel" checked>
+								<label for="fhotel">ГОСТИНИЦА</label>
+							</div>
+							<div class="filter">
+								<input type="checkbox" id="fmotel" value="motel" checked>
+								<label for="fmotel">МОТЕЛЬ</label>
+							</div>
+							<div class="filter">
+								<input type="checkbox" id="fapart" value="apartments" checked>
+								<label for="fapart">АПАРТАМЕНТЫ</label>
+							</div>
 						</div>
-						<div class="show_result">
-							<button type="submit" class="result_filters">Показать</button>
+						<div class="price_filter">
+							<div class="price_day">
+								<p class="filter_title">СТОИМОСТЬ В СУТКИ (Р):</p>
+							</div>
+							<div class="price_from_to">
+								<input class="min_price" id="price_from" type="text" value="ОТ 0">
+								<input class="max_price" id="price_to" type="text" value="ДО 3000">
+							</div>
+							
+							<div class="slider_price">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle min_toggle"></div>
+								<div class="toggle max_toggle"></div>
+							</div>
+							<div class="show_result">
+								<button type="submit" class="result_filters">Показать</button>
+							</div>
 						</div>
+						</form>
 					</div>
-					</form>
 				</div>
-					   
-				<!-- 	сортировка		-->
-				<div class="sort"> 
-					<p class="sort_text">Найдено: 3</p>
-					<p class="sort_title">Сортировка:</p>
-					<a class="sort_item1" href="#">По цене</a> 
-					<a class="sort_item2" href="#">По типу</a> 
-					<a class="sort_item3" href="#">По рейтингу</a> 
+				<div class="sort_block">
+					<div class="sort"> 
+						<p class="sort_text">НАЙДЕНО: 3</p>
+						<p class="sort_title">СОРТИРОВКА:</p>
+						<ul class="sorts">
+							<li><a class="sort_item1" href="#">ПО ЦЕНЕ</a></li>
+							<li><a class="sort_item2" href="#">ПО ТИПУ</a></li>
+							<li><a class="sort_item3" href="#">ПО РЕЙТИНГУ</a></li>
+						</ul>
+					</div>
 					<div class="sort_ascend_descend">
-						<a href="#" class="sort_ascend">
-							<span class="icon_ascend"> 
-							<!--тут будет стрелка вверх-->
-							</span> 
-						</a>
-						<a href="#" class="sort_descend">
-							<span class="icon_descend"> 
-							<!--тут будет стрелка вниз-->
-							</span>
-						</a>
+						<a href="#" class="sort_ascend"></a>
+						<a href="#" class="sort_descend"></a>
 					</div>
 				</div>
-
 				<div class="results"> 
-					<div class="result"> <!--некий образец для двух других блоков результата -->
+					<div class="result">
 						<div class="result_capture">
 							<img class="result_img" src="img/amara.jpg" width="135px" height="90px" alt="Amara Resort Spa">
 						</div>
@@ -117,48 +104,48 @@
 								<h2><a class="result_url" href="#">AMARA RESORT & SPA</a></h2>
 							</div>
 							<div class="result_texts">
-								<p class="result_text">ГОСТИНИЦА</p>
-								<p class="result_text">ОТ 3500 Р.</p>
+								<p class="result_text1">ГОСТИНИЦА</p>
+								<p class="result_text2">ОТ 3500 Р.</p>
 							</div>
 							<div class="result_options">
-								<a class="result_option" href="#">ПОДРОБНЕЕ</a>
-								<a class="result_option" href="#">ЗАБРОНИРОВАТЬ</a>
+								<a class="res_btn result_option1" href="#">ПОДРОБНЕЕ</a>
+								<a class="res_btn result_option2" href="#">ЗАБРОНИРОВАТЬ</a>
 							</div>
 						</div>
 						<div class="result_rating_stars">
-							<span class="result_stars"> 
-							<!--тут будут звездочки рейтинга-->
-							</span>
+							<span class="result_stars"></span>
+							<span class="result_stars"></span>
+							<span class="result_stars"></span>
+							<span class="result_stars"></span>
 						 	<p class="result_rate_text">РЕЙТИНГ: 8,5</p>
 						</div>
 					</div>
 					<div class="results"> 
-						<div class="result"> <!--некий образец для двух других блоков результата -->
+						<div class="result">
 							<div class="result_capture">
 								<img class="result_img" src="img/desert.jpg" width="135px" height="90px" alt="Desert Quail Inn">
 							</div>
 						<div class="result_info">
 							<div class="result_title">
-								<h2><a class="result_url" href="#">DESERT QUAL INN</a></h2>
+								<h2><a class="result_url" href="#">DESERT QUAIL INN</a></h2>
 							</div>
 							<div class="result_texts">
-								<p class="result_text">МОТЕЛЬ</p>
-								<p class="result_text">ОТ 2000 Р.</p>
+								<p class="result_text1">МОТЕЛЬ</p>
+								<p class="result_text2">ОТ 2000 Р.</p>
 							</div>
 							<div class="result_options">
-								<a class="result_option" href="#">ПОДРОБНЕЕ</a>
-								<a class="result_option" href="#">ЗАБРОНИРОВАТЬ</a>
+								<a class="res_btn result_option1" href="#">ПОДРОБНЕЕ</a>
+								<a class="res_btn result_option2" href="#">ЗАБРОНИРОВАТЬ</a>
 							</div>
 						</div>
 						<div class="result_rating_stars">
-							<span class="result_stars"> 
-							<!--тут будут звездочки рейтинга-->
-							</span>
+							<span class="result_stars"></span>
+							<span class="result_stars"></span>
 						 	<p class="result_rate_text">РЕЙТИНГ: 8,9</p>
 						</div>
 					</div>
 					<div class="results"> 
-						<div class="result"> <!--некий образец для двух других блоков результата -->
+						<div class="result">
 							<div class="result_capture">
 								<img class="result_img" src="img/villas.jpg" width="135px" height="90px" alt="Villas At Poco Diablo">
 							</div>
@@ -167,18 +154,18 @@
 								<h2><a class="result_url" href="#">VILLAS AT POCO DIABLO</a></h2>
 							</div>
 							<div class="result_texts">
-								<p class="result_text">АПАРТАМЕНТЫ</p>
-								<p class="result_text">ОТ 4000 Р.</p>
+								<p class="result_text1">АПАРТАМЕНТЫ</p>
+								<p class="result_text2">ОТ 4000 Р.</p>
 							</div>
 							<div class="result_options">
-								<a class="result_option" href="#">ПОДРОБНЕЕ</a>
-								<a class="result_option" href="#">ЗАБРОНИРОВАТЬ</a>
+								<a class="res_btn result_option1" href="#">ПОДРОБНЕЕ</a>
+								<a class="res_btn result_option2" href="#">ЗАБРОНИРОВАТЬ</a>
 							</div>
 						</div>
 						<div class="result_rating_stars">
-							<span class="result_stars"> 
-							<!--тут будут звездочки рейтинга-->
-							</span>
+							<span class="result_stars"></span>
+							<span class="result_stars"></span>
+							<span class="result_stars"></span>
 						 	<p class="result_rate_text">РЕЙТИНГ: 9,2</p>
 						</div>
 					</div>
@@ -193,13 +180,17 @@
 						<a class="visit_sedona" href="#">#VISITSEDONA</a>
 					</div>
 					<div class="social_links">
-						<a class="social_twitter" href="#">tw</a>
-						<a class="social_facebook" href="#">fb</a>
-						<a class="social_youtube" href="#">yb</a>
+						<a class="social_icons social_twitter" href="#"></a>
+						<a class="social_icons social_facebook" href="#"></a>
+						<a class="social_icons social_youtube" href="#"></a>
 					</div>
 					<div class="logo_by_htmlacademy">
-						<p class="website_by">WEBSITE BY</p>
-						<!--<a class="logo_htmlacademy" href="#"><img class="htmlacademy_img" src="img/logo_htmlacademy.png" width="113px" height="39px" alt="HTML Academy"></a>-->
+						<p class="website_by">
+						WEBSITE BY 
+							<a class="logo_htmlacademy" href="#">
+								<img class="htmlacademy_img" src="img/logo_htmlacademy.png" width="113px" height="39px" alt="HTML Academy">
+							</a>
+						</p>
 					</div>
 				</div>
 			</div>
