@@ -65,6 +65,9 @@ input {
 	float: right;
 	text-align: right;
 }
+.nav_item:nth-child(4) {
+	letter-spacing: 0.5px;
+}
 .nav_item a {
 	margin: 0px;
 	padding: 0px;
@@ -322,20 +325,20 @@ input {
 	margin-right: 72px;
 	min-height: 290px; 
 	text-align: center;
-	padding-top: 55px;
+	padding-top: 52px;
 	box-sizing: border-box;
 	background-color: white;
 }
 .offer_title {
 	font-size: 30px;
-	line-height: 24px;
+	line-height: 30px;
 	font-weight: bold;
 	color: #000000;
 }
 .offer_text {
 	font-size: 14px;
 	line-height: 24px;
-	padding-top: 30px;
+	padding-top: 25px;
 }
 
 .search_title {
@@ -343,12 +346,13 @@ input {
 	text-decoration: none;
 	font-size: 21px;
 	line-height: 26px;
+	font-weight: bold;
 	color: #ffffff;
 	vertical-align: middle;
 	background-color: #766357;
 	text-align: center;
 	min-width: 568px;
-	margin-top: 47px;
+	margin-top: 49px;
 	padding: 30px 0;
 }
 
